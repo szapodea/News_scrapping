@@ -8,6 +8,11 @@ can a LLM determine if that article would be good or bad for stock market short-
 '''
 from news_sites.reuters import main_reuters
 from news_sites.ap import main_ap
+from invest import grade_headlines
+
 if __name__ == '__main__':
     #main_reuters()
+    #main_ap()
     main_ap()
+    grade_headlines('ap', trump=True)
+    grade_headlines('financial_ap')
