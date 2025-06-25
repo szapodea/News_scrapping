@@ -52,5 +52,4 @@ def ask_claude(headline):
         ]
     )
 
-
     print(message.content[0].text)
